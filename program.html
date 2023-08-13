@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="program.css">
+        <title>몬스터짐</title>
+    </head>
+    <body>
+        <div class = "intro_bg" id="link_header">
+            <div class = "header">
+                <div class = "pagename">
+                    <h2><a href="#link_header" style="text-decoration: none;"><img src="image/homeicon.png">Monster Gym</a></h2>
+                </div>
+                    <ul class="nav">
+                        <li class="nav-item"><a href="index.php" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="program.html" class="nav-link">Program</a></li>
+                        <li class="nav-item"><a href="facility.html" class="nav-link">Facility</a></li>
+                        <li class="nav-item"><a href="notice.html" class="nav-link">Notice</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="head">
+            <h3 class="text-right" style="margin-right: 50px;">HOME > Program</h3>
+            <hr>
+            <h1 style="font-size: 40px;"><b>Program</b></h1>
+            <h2 style="font-size: 35px;"><b>프로그램</b>을 소개합니다.</h2>
+        </div>
+        <script>
+            let mainText = document.querySelector(".head");
+            window.addEventListener('scroll',function() {
+                let value = window.scrollY;
+                console.log("scrollY", value);
+
+                if(value>-100 && value < 450) {
+                    mainText.style.animation='fadeIn 2s';
+                } else {
+                    mainText.style.animation='fadeOut 1s';
+                }
+            });
+        </script>
+        <div class="row">
+            <div class="col-lg-12 text-center" id="top">
+                <hr>
+                <h1>1:1 Personal Training</h1>
+            </div>
+        </div>
+        <div class="row" id="pt">
+            <div class="col-lg-12" id="top_img">
+                <img src="image/program.jpg">
+                <p id="text1">1:1 Personal Training</p><br>
+                <p id="text2">1:1 개인 트레이닝 프로그램으로 회원님의 체형과<br>목표에 맞춰 꼼꼼한 프로그램을 진행합니다.</p>
+                <br><br><p id="text3"><span class="material-icons">done_all</span>1:1 60분 프로그램</p>
+                <p id="text3"><span class="material-icons">done_all</span>전문 트레이너에게 집중적으로 체계적 체중/체형관리를 받고싶은 분</p>
+                <h1>+ 가격안내</h1>
+                <p id="text4"><span class="material-icons">check</span>
+                    1:1 다이어트 프로그램 - 60분 / 20회 70만원</p>
+                <p id="text4" style="margin-bottom: 100px;"><span class="material-icons">check</span>
+                    1:1 체력관리 프로그램 - 60분 / 20회 70만원</p>
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 text-center" id="mid">
+                <hr>
+                <h1>4:1 Group Training</h1>
+            </div>
+        </div>
+        <div class="row" id="pt">
+            <div class="col-lg-12" id="top_img">
+                <img src="image/grouppt.jpg">
+                <p id="text1">4:1 Group Training</p><br>
+                <p id="text2">4:1 4명의 인원으로 구성된 프로그램으로 회원님의 체형과<br>목표에 맞춰 꼼꼼한 프로그램을 진행합니다.</p>
+                <br><br><p id="text3"><span class="material-icons">done_all</span>4:1 60분 프로그램</p>
+                <p id="text3"><span class="material-icons">done_all</span>다수와 함께 활발한 분위기에서 체중/체형관리를 받고싶은 분</p>
+                <h1>+ 가격안내</h1>
+                <p id="text4"><span class="material-icons">check</span>
+                    4:1 다이어트 프로그램 - 60분 / 20회 50만원</p>
+                <p id="text4" style="margin-bottom: 100px;"><span class="material-icons">check</span>
+                    4:1 체력관리 프로그램 - 60분 / 20회 50만원</p>
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 text-center" id="mid">
+                <hr>
+                <h1>Pilates</h1>
+            </div>
+        </div>
+        <div class="row" id="pt">
+            <div class="col-lg-12" id="top_img">
+                <img src="image/pilates.jpg">
+                <p id="text1">Pilates</p><br>
+                <p id="text2">다양한 필라테스 기구를 이용해 전문 필라테스 강사와 함께 체계적<br>이고 수준높은 프로그램을 진행합니다.</p>
+                <br><br><p id="text3"><span class="material-icons">done_all</span>1:1 60분 프로그램 , 2:1 80분 프로그램</p>
+                <p id="text3"><span class="material-icons">done_all</span>다수와 함께 활발한 분위기에서 체중/체형관리를 받고싶은 분</p>
+                <h1>+ 가격안내</h1>
+                <p id="text4"><span class="material-icons">check</span>
+                    1:1 다이어트 프로그램 - 60분 / 20회 50만원</p>
+                <p id="text4"><span class="material-icons">check</span>
+                    1:1 체력관리 프로그램 - 60분 / 20회 50만원</p>
+            </div>
+        </div>
+        <!-- footer start -->
+        <footer>
+            <div>
+                <div>LOGO</div>
+                <img src="image/homeicon.png" style="width:50px; height:50px;">
+            </div>
+            <div>
+                CEO. 몬스터짐
+                <br>Addr. 경기도 포천시 선단동 호국로 1007 KR 대진대학교
+                <br>Fax/Tel. 031 - 539 - 1114
+                <p>&copy;Copyright 2022. Sun. All rights reserved.</p>
+            </div>
+        </footer>
+        <!-- footer end -->
+    </body>
+</html>
+        <!-- (header)intro end-->

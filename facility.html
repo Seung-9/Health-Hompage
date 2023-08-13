@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="facility.css">
+        <title>몬스터짐</title>
+    </head>
+    <body>
+        <div class = "intro_bg" id="link_header">
+            <div class = "header">
+                <div class = "pagename">
+                    <h2><a href="index.php" style="text-decoration: none;"><img src="image/homeicon.png">Monster Gym</a></h2>
+                </div>
+                    <ul class="nav">
+                        <li class="nav-item"><a href="index.php" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="program.html" class="nav-link">Program</a></li>
+                        <li class="nav-item"><a href="facility.html" class="nav-link">Facility</a></li>
+                        <li class="nav-item"><a href="notice.html" class="nav-link">Notice</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="head">
+            <h3 class="text-right" style="margin-right: 50px;">HOME > Facility</h3>
+            <hr>
+            <h1 style="font-size: 40px;"><b>Facility</b></h1>
+            <h2 style="font-size: 35px; margin-bottom: 150px;"><b>내부시설을</b> 소개합니다.</h2>
+            <h1 style="font-weight: bolder; margin-bottom: 30px;">+ 안내사항</h1>
+        </div>
+        <hr>
+        <div class="head_text">
+            <p id="text"><span class="material-icons">check</span>
+                <b>샤워실 및 개인 락커룸 </b>완비.</p>
+            <p id="text"><span class="material-icons">check</span>
+                <b>수건 제공, 1회용 바디워시 </b>제공.</p>
+            <p id="text"><span class="material-icons">check</span>
+                최고급 운동기구 및 깔끔한 내부시설.</p><br><br>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <img src="image/1facility.jpg">
+                </div>
+                <div class="col-sm-6">
+                    <img src="image/2facility.jpg">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <img src="image/3facility.jpg">
+                </div>
+                <div class="col-sm-6">
+                    <img src="image/5facility.jpg">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <img src="image/facilitylocker.jpg">
+                </div>
+                <div class="col-sm-6">
+                    <img src="image/facilitypilates.jpg">
+                </div>
+            </div>
+        </div>
+        <script>
+            let mainText = document.querySelector(".head");
+            window.addEventListener('scroll',function() {
+                let value = window.scrollY;
+                console.log("scrollY", value);
+
+                if(value>-100 && value < 450) {
+                    mainText.style.animation='fadeIn 2s';
+                } else {
+                    mainText.style.animation='fadeOut 1s';
+                }
+            });
+        </script>
+        <!-- footer start -->
+        <footer>
+            <div>
+                <div>LOGO</div>
+                <img src="image/homeicon.png" style="width:50px; height:50px;">
+            </div>
+            <div>
+                CEO. 몬스터짐
+                <br>Addr. 경기도 포천시 선단동 호국로 1007 KR 대진대학교
+                <br>Fax/Tel. 031 - 539 - 1114
+                <p>&copy;Copyright 2022. Sun. All rights reserved.</p>
+            </div>
+        </footer>
+        <!-- footer end -->
+    </body>
+</html>
+        <!-- (header)intro end-->

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="notice.css">
+        <title>몬스터짐</title>
+    </head>
+    <body>
+        <div class = "intro_bg" id="link_header">
+            <div class = "header">
+                <div class = "pagename">
+                    <h2><a href="index.php" style="text-decoration: none;"><img src="image/homeicon.png">Monster Gym</a></h2>
+                </div>
+                    <ul class="nav">
+                        <li class="nav-item"><a href="index.php" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="program.html" class="nav-link">Program</a></li>
+                        <li class="nav-item"><a href="facility.html" class="nav-link">Facility</a></li>
+                        <li class="nav-item"><a href="notice.html" class="nav-link">Notice</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="head">
+            <h3 class="text-right" style="margin-right: 50px;">HOME > Facility</h3>
+            <hr>
+            <h1 style="font-size: 40px;"><b>Notice</b></h1>
+            <h2 style="font-size: 35px; margin-bottom: 150px;"><b>공지 및 이벤트</b>입니다.</h2>
+        </div>
+        <div class="container-fluid bg-3 text-center" id="post"> 
+            <ul class="nav nav-pills" id="nav_pills">
+              <li><a data-toggle="tab" href="#menu0">+ FAQ</a></li>
+              <li><a data-toggle="tab" href="#menu1">+ Notice</a></li>
+            </ul>
+            <script>
+                $("#nav_pills a").click(function() {
+                    $("#nav_pills a").css("background-color","");
+                    $(this).css("background-color","rgb(253, 138, 138)");
+                });
+            </script>
+            <div class="tab-content">
+                <div id="menu0" class="tab-pane">
+                <br><br><br>
+                    <div class="row">
+                        <div class="col-lg-12" id="inner">
+                            <details>
+                                <summary>+ 내부시설이 궁금해요.</summary>
+                                <br>
+                                <p>내부시설은 메뉴 > Facility 페이지에서 확인 가능합니다.</p>
+                                <p>감사합니다.</p>
+                            </details>
+                        </div>
+                        <div class="col-lg-12">
+                            <details>
+                                <summary>+ 상담을 받고 싶어요.</summary>
+                                <br>
+                                <p>상담은 방문 상담, 온라인 상담, 전화 상담 모두 가능합니다.</p>
+                                <p>- 방문 상담시 온라인 방문예약을 해주시면 더 자세한 상담이 가능합니다.</p>
+                                <p>- 전화 상담은 02-000-0000 으로 전화주시면 됩니다.</p><br>
+                                <p>감사합니다.</p>
+                            </details>
+                        </div>
+                        <div class="col-lg-12">
+                            <details>
+                                <summary>+ 프로그램에 대해 알고싶어요.</summary>
+                                <br>
+                                <p>몬스터짐은 프로그램은 <b>1:1 Personal Training , 4:1 Group Training, Pilates</b> 으로 이루어져 있으며,</p>
+                                <p>자세한 사항은 메뉴 > Program 페이지에서 확인하실 수 있습니다.</p><br>
+                                <p>감사합니다.</p>
+                            </details>
+                        </div>
+                        <div class="col-lg-12">
+                            <details>
+                                <summary>+ 운영시간이 어떻게 되나요?</summary>
+                                <br>
+                                <p>저희 몬스터짐은 오9시부터 오후5시까지 운영합니다</p>
+                                <p>주말, 공휴일은 운영하지 않습니다.</p><br>
+                                <p>감사합니다.</p>
+                            </details>
+                        </div>
+                    </div>
+                </div>
+                <div id="menu1" class="tab-pane">
+                    <div class="container" style="margin-top: 100px;">
+                        <table class="table table-bordered table-hover">
+                            <thead>
+                                <tr>
+                                    <th>번호</th>
+                                    <th>제목</th>
+                                    <th>작성자</th>
+                                    <th>날짜</th>
+                                    <th>조회수</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>몬스터짐 6월 맞이 회원권 이벤트 안내</td>
+                                    <td>몬스터짐</td>
+                                    <td>2022.06.07</td>
+                                    <td>10</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>몬스터짐 6월 맞이 회원권 이벤트 안내</td>
+                                    <td>몬스터짐</td>
+                                    <td>2022.06.07</td>
+                                    <td>10</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>몬스터짐 6월 맞이 회원권 이벤트 안내</td>
+                                    <td>몬스터짐</td>
+                                    <td>2022.06.07</td>
+                                    <td>10</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <hr>
+                        <a class="btn btn-default pull-right">글쓰기</a>
+                        <div class="text-center">
+                            <ul class="pagination">
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                      <span aria-hidden="true">&laquo;</span>
+                                    </a>
+                                  </li>
+                                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                  <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                      <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                  </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <script>
+            let mainText = document.querySelector(".head");
+            window.addEventListener('scroll',function() {
+                let value = window.scrollY;
+                console.log("scrollY", value);
+
+                if(value>-100 && value < 450) {
+                    mainText.style.animation='fadeIn 2s';
+                } else {
+                    mainText.style.animation='fadeOut 1s';
+                }
+            });
+        </script>
+        <!-- footer start -->
+        <footer>
+            <div>
+                <div>LOGO</div>
+                <img src="image/homeicon.png" style="width:50px; height:50px;">
+            </div>
+            <div>
+                CEO. 몬스터짐
+                <br>Addr. 경기도 포천시 선단동 호국로 1007 KR 대진대학교
+                <br>Fax/Tel. 031 - 539 - 1114
+                <p>&copy;Copyright 2022. Sun. All rights reserved.</p>
+            </div>
+        </footer>
+        <!-- footer end -->
+    </body>
+</html>
+        <!-- (header)intro end-->

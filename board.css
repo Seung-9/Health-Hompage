@@ -1,0 +1,103 @@
+* {
+    text-decoration: none;
+    color: black;
+	margin: 0 auto;
+	padding: 0 auto;
+    background-color: beige;
+}
+
+.list_container th{
+	height:40px;
+	border-bottom:1px solid #CCC;
+	font-weight: bold;
+	font-size: 17px;
+}
+.list_container td{
+	text-align:center;
+	padding:10px 0;
+	border-bottom:1px solid #CCC; height:20px;
+	font-size: 14px 
+}
+.btn {
+	position: absolute;
+	margin-top:20px;
+	right: 0;
+}
+/* boardlist */
+.wrap > h1 {
+    margin-top: 40px;
+}
+.wrap {
+	width:900px;
+	position:relative;
+	margin:0 auto;
+}
+.container {
+    margin-top: 30px;
+	font-size:14px;
+}
+.title > input {
+	font-weight:bold;
+	font-size:26px;
+	color:#333;
+	width: 900px;
+	border:none;
+	resize: none;
+}
+.name {
+	margin-top:30px;
+}
+.name > input {
+	font-weight:bold;
+	font-size:26px;
+	color:black;
+	width: 900px;
+	border:none;
+	resize: none;
+}
+.content {
+	margin-top:10px;
+}
+.content > input {
+    border:1px solid black;
+	font:14px;
+	color:black;
+	width: 900px;
+	height: 400px;
+}
+.password > input {
+    border:1px solid black;
+	font:14px;
+	margin-top:10px;
+}
+.btn button {
+	position: relative;
+	width:100px;
+	height:30px;;
+}
+.btn2 button {
+	float: right;
+	width:100px;
+	height:30px;;
+}
+/* writeboard */
+
+/* Style Page */
+.page_area {
+	font-size: 14px;
+	margin-left: 260px;
+	margin-top:30px; 
+}
+.page_area ul li {
+	list-style: none;
+	float: left;
+	margin-left: 10px; 
+	text-align: center;
+}
+.select {
+	font-weight: bold;
+	color:black;
+}
+.search_area {
+	position: absolute;
+}

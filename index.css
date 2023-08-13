@@ -1,0 +1,636 @@
+* {
+    
+    font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    border-collapse: none;
+}
+/* intro start */
+#popup {
+    background-color: red;
+    background-image: url(image/popup.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.intro_bg {
+    position: relative; /* 문서의 흐름에 따라 배치 */
+    display: flex; /* 화면 좌측과(텍스트) 우측을 나누기 위해 flex 사용*/
+    background-image: url(image/main.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+}
+.header {
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed; /* 헤더를(로고 및 nav바) 고정하기 위해서 fixed 사용 */
+    display: flex;
+    margin: auto;
+    width: 100%;
+    z-index: 1; /* nav바가 가장 위에 배치되기 위해서 z-index를 1로 설정*/
+}
+.nav {
+    display: flex;
+    justify-content: flex-end; /* nav바를 오른쪽으로 배치*/
+    line-height: 86px;
+    margin-right: 50px;
+    font-size: 25px;
+    font-weight:100;
+    width: 50%;
+}
+
+.nav > li > a {
+    color: rgb(149, 121, 42);
+    padding: 13px 30px;
+}
+
+.nav > li:hover {
+    background-color: black;
+}
+
+
+.nav li a:hover {
+    background-color: black;
+    color: white;
+}
+
+img {
+    position: relative;
+    width: 50px;
+    height: 20px;
+}
+.pagename {
+    margin-top: 30px;
+    margin-left: 60px;
+    width: 100%;
+}
+
+.pagename > h2 > a {
+    color: rgb(149, 121, 42);
+}
+
+/* fade 애니메이션(좌측에서 나타나기)*/
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translate3d(-100%, 0, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}
+
+/* fade 애니메이션(우측에서 나타나기)*/
+@keyframes fadeOutLeft {
+    from {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+    to {
+        opacity: 0;
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+
+.intro_text {
+    color: white;
+    padding: 200px 30px;
+    animation: fadeInLeft 1.5s; /* 좌측에서 나타나기 */
+}
+
+.intro_text > h1 {
+    font-size: 60px;
+}
+
+.btn {
+    color: white;
+    background-color: rgb(48, 46, 46);
+    text-align: center;
+    border: 1px solid #fff;
+    margin: 16px auto;
+    height: 40px;
+    width: 110px;
+    cursor: pointer;
+}
+
+.btn2{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin-top: 170px;
+    margin-left: 100px;
+    margin-bottom: 80px;
+    line-height: 55px;
+    text-align: center;
+    border: 1px solid #fff;
+    height: 55px;
+    width: 220px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: large;
+}
+
+/* intro_bg end */
+
+/* introduce start */
+.btn4 {
+    font-size: 50px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    text-align: center;
+    border: 1px solid #fff;
+    margin: 16px auto;
+    height: 100px;
+    width: 100px;
+    line-height: 110px;
+    font-weight: lighter;
+    cursor: pointer;
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translate3d(100%, 0, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}
+
+@keyframes fadeOutRight {
+    from {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+    to {
+        opacity: 0;
+        transform: translate3d(100%, 0, 0);
+    }
+}
+
+.introduce {
+    position: relative;
+    display: flex;
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+}
+
+.introduce > .introduce_main {
+    margin: 80px 0px;
+    position: relative;
+    width: 100%;
+    height: 70%;
+}
+
+.introduce_main > .introduce_img > img{
+    padding: 30px;
+    position: absolute;
+    margin-left: 150px;
+    width: 30%;
+    height: 100%;
+    opacity: 0.8;
+}
+
+.introduce_main > .introduce_content {
+    padding: 30px;
+    margin-left: 800px;
+}
+
+.introduce_content > h3 {
+    color: rgb(149, 121, 42);
+    font-size: 30px;
+}
+
+.introduce_content > p {
+    color: white;
+    padding-top: 50px;
+    line-height: 50px;
+    font-size: 15px;
+}
+
+.btn4 {
+    font-size: 50px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    text-align: center;
+    border: 1px solid #fff;
+    margin: 16px auto;
+    height: 100px;
+    width: 100px;
+    line-height: 110px;
+    cursor: pointer;
+}
+.btn4:hover {
+    border: none;
+}
+/* introduce end */
+
+/* content start */
+.content {
+    position: relative;
+    background-image: url('image/background.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+.content> .content_main {
+    padding: 100px 0px;
+    position: relative;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#cont {
+    padding: 10px;
+    font-weight:normal;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 150px;
+}
+
+.content > .content_main > .facility {
+    color: white;
+    background-image: url('image/facility3.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+    opacity: 0.8;
+    width: 100%;
+}
+
+/* slide start */
+.section input[id*="slide"] {
+    display:none;
+}
+
+.section .slide-wrap {
+    width: 600px;
+    overflow: hidden;
+    opacity: 0.8;
+}
+.section .slidelist {
+    position: relative;
+    white-space:nowrap;
+    font-size:0;
+}
+.section .slidelist > li {
+    display:inline-block;
+    vertical-align:middle;
+    width:100%;
+    transition:all .5s;
+}
+.section .slidelist > li > a {
+    display:block;
+    position:relative;
+}
+.section .slidelist > li > a img {
+    width: 100%;
+    margin-top: 7px;
+    height: 600px;
+}
+.section .slidelist label {
+    position:absolute;
+    z-index:10;
+    top:50%;
+    transform:translateY(-50%);
+    padding:15px;
+    cursor:pointer;
+}
+/* 화살표 이미지 */
+.section .slidelist .left {
+    left:30px;
+    background:url('image/left-arrow.png') center center / 100% no-repeat;
+}
+.section .slidelist .right {
+    right:30px;
+    background:url('image/right-arrow.png') center center / 100% no-repeat;
+}
+
+/* 화살표 이미지 끝 */
+
+.section .slidelist .textbox {
+    position:absolute;
+    z-index:1;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    line-height:1.6;
+    text-align:center;
+}
+
+.section .slidelist .textbox h3 {
+    margin-top: 180px;
+    font-size:50px;
+    margin-bottom: 40px;
+    color:#fff;
+    opacity:0;
+    transform:translateY(30px);
+    transition:all .5s;
+}
+.section .slidelist .textbox  p {
+    margin-bottom: 200px;
+    margin-left: 40px;
+    position: relative;
+    text-align: left;
+    font-weight: lighter;
+    font-size:24px;
+    color:#fff;
+    opacity:0;
+    transform:translateY(30px);
+    transition:all .5s;
+}
+
+.btn3 {
+    margin-left: 100px;
+    margin-top: 105px;
+    color: white;
+    position:absolute;
+    z-index:1;
+    top:50%;
+    left:50%;
+    line-height:1.6;
+    text-align:center;
+    background-color: rgba(0, 0, 0, 0.1);
+    line-height: 55px;
+    text-align: center;
+    border: 1px solid #fff;
+    height: 55px;
+    width: 220px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: large;
+}
+
+/* slide 애니메이션 부분 */
+.section input[id="slide01"]:checked ~ .slide-wrap .slidelist > li {
+    transform:translateX(0%);
+}
+.section input[id="slide02"]:checked ~ .slide-wrap .slidelist > li {
+    transform:translateX(-100%);
+}
+.section input[id="slide03"]:checked ~ .slide-wrap .slidelist > li {
+    transform:translateX(-200%);
+}
+
+.section input[id="slide01"]:checked ~ .slide-wrap li:nth-child(1) .textbox h3 {
+    opacity:1;
+    transform:translateY(0);
+    transition-delay:.2s;
+}
+.section input[id="slide01"]:checked ~ .slide-wrap li:nth-child(1) .textbox p {
+    opacity:1;
+    transform:translateY(0);
+    transition-delay:.4s;
+}
+.section input[id="slide02"]:checked ~ .slide-wrap li:nth-child(2) .textbox h3 {
+    opacity:1;
+    transform:translateY(0);
+    transition-delay:.2s;
+}
+.section input[id="slide02"]:checked ~ .slide-wrap li:nth-child(2) .textbox p {
+    opacity:1;
+    transform:translateY(0);
+    transition-delay:.4s;}
+
+.section input[id="slide03"]:checked ~ .slide-wrap li:nth-child(3) .textbox h3 {
+    opacity:1;
+    transform:translateY(0);
+    transition-delay:.2s;
+}
+.section input[id="slide03"]:checked ~ .slide-wrap li:nth-child(3) .textbox p {
+    opacity:1;
+    transform:translateY(0);
+    transition-delay:.4s;
+}
+
+.content_main > .map {
+    color: white;
+    background-image: url('image/about.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    width: 100%;
+    opacity: 0.8;
+}
+
+/* slide end */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+/* content end */
+
+/* content2 start */
+.trainer {
+    padding:1px;
+    position: relative;
+    place-items: center;
+    background-color:black;
+    width: 100%;
+    height: 100%;
+}
+
+.trainer > .text > h3 {
+    padding-top: 30px;
+    text-align: center;
+    color: rgb(149, 121, 42);
+    font-size: 30px;
+}
+
+.trainer > .grid-container {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(340px, auto));
+    grid-gap: 2em;
+}
+
+.grid-container > .grid-items {
+    position: relative;
+    width: 100%;
+    height: 70%;
+}
+
+.grid-items > img {
+    place-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    filter: grayscale(100%);
+}
+
+.grid-container > .grid-items > h2 {
+    position: absolute;
+    transform: translate(50%, -50%);
+    color: rgb(149, 121, 42);
+    z-index: 1;
+}
+
+/* modal */
+.modal-header {
+    background-color:rgba(0, 0, 0, 0.9);
+    color: rgb(149, 121, 42);
+}
+.modal-body {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white
+}
+/* content2 end */
+
+/* contact start */
+.contact {
+    position: relative;
+    background-color: rgb(219, 219, 219);
+    width: 100%;
+    height: 100vh;
+}
+.contact > .contact_container {
+    overflow: hidden;
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    transform: translate(0%, 13%);
+}
+
+.contact_container > .contact_items1 {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.icon > .hr_1 {
+    position: absolute;
+    margin-top: 230px;
+    border:1px solid white;
+    width: 70%;
+    margin-left: 120px;
+}
+.hr_1 > span {
+    cursor: pointer;
+}
+.icon > .hr_2 {
+    position: absolute;
+    border:1px solid white;
+    width: 70%;
+    margin-left: 120px;
+}
+.icon > .material-icons {
+    cursor: pointer;
+    font-size: 150px;
+    margin-top: 250px;
+    margin-left: 120px;
+    color: white;
+}
+.text_container div {
+    font-weight: none;
+    text-align: center;
+    transform: translate(10%, -100%);
+    color: white;
+    font-size: 50px;
+}
+.contact_container > .contact_items2 {
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+.contact_items2 > .bg_img {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-image: url("image/facility2.jpg");
+    filter: blur(3px);
+    transform: scale(1.02);
+    z-index: -1; 
+    background-position: center;
+    background-size: cover;
+    background-attachment: none;
+}
+.contact_text > #p1 {
+    position: absolute;
+    transform: translate(30%, -700%);
+    color: white;
+    font-weight: lighter;
+    font-size: 50px;
+}
+.contact_text > #p2 {
+    position: absolute;
+    font-weight: bolder;
+    transform: translate(20%, -600%);
+    color: white;
+    font-size: 50px;
+}
+.contact_text > #p3 {
+    position: absolute;
+    font-weight: lighter;
+    transform: translate(26%, -850%);
+    color: white;
+    font-size: 30px;
+}
+.contact_text > .contact_btn {
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    float: right;
+    border: 0.5px solid #fff;
+    margin-right: 100px;
+    height: 120px;
+    width: 120px;
+    line-height: 110px;
+    cursor: pointer;
+    transform: translate(0%, -400%);
+}
+.contact_btn:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+}
+
+/* contact end */
+
+/* footer start */
+footer {
+    padding: 70px;
+    display: flex;
+    width: 100%;
+    height: 200px;
+    background-color: rgb(63, 58, 58);
+}
+
+footer > div:first-child {
+    color: #fff;
+    flex: 3;
+    text-align: center;
+}
+
+footer > div:last-child {
+    color: #fff;
+    flex: 9;
+}
+/* footer end */

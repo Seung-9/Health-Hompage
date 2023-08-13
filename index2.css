@@ -1,0 +1,138 @@
+* {
+    
+    font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    border-collapse: none;
+}
+.intro_bg {
+    position: absolute;
+    background-image: url(image/usermain.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.pagename {
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 60px;
+}
+.header {
+    width: 10%;
+    margin-left: 90%;
+    position:fixed;
+    background-color: black;
+}
+
+.pagename > h2 > a {
+    color: rgb(149, 121, 42);
+}
+
+.nav {
+    position: absolute;
+    height: 100%;
+    text-align: center;
+    font-size: 30px;
+    font-weight:100;
+}
+
+.nav > li > a {
+    position: relative;
+    color: rgb(149, 121, 42);
+    text-align: center;
+}
+
+.nav > li:hover {
+    display: block;
+    background-color: white;
+    color: black;
+}
+
+
+.nav li a:hover {
+    background-color: white;
+    color: black;
+}
+
+.nav > .nav-item1 {
+    height: 100px;
+    padding-top: 25%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.nav > .nav-item2 {
+    height: 100px;
+    padding-top: 25%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.nav-menu {
+    display: none;
+    position: absolute;
+    height: 140px;
+    width: 100px;
+    margin: -108px -100px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.nav-menu a{
+    font-size: 30px;
+    line-height: 70px;
+    color: rgb(149, 121, 42);
+    text-decoration: none;
+    display: block;
+}
+.nav > .nav-item2:hover > .nav-menu {
+    display: block;
+}
+.nav > .nav-item3 {
+    height: 100px;
+    padding-top: 25%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.nav > .nav-item4 {
+    height: 100px;
+    padding-top: 25%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.nav > .nav-item5 {
+    height: 100px;
+    padding-top: 25%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+img {
+    width: 50px;
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translate3d(-100%, 0, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}
+
+@keyframes fadeOutLeft {
+    from {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+    to {
+        opacity: 0;
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+
+.intro_text {
+    color: white;
+    padding: 200px 30px;
+    animation: fadeInLeft 1.5s;
+}
+
+.intro_text > h1 {
+    font-size: 60px;
+}
